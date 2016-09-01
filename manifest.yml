@@ -1,0 +1,7 @@
+---
+applications:
+  - name: mysql-test
+    path: ./build/libs/mysql-test.jar
+    memory: 512M
+    instances: 1
+    buildpack: java_buildpack_offline

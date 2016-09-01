@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    platform: postgres
+    driverClassName: com.mysql.jdbc.Driver
+    username: rocket
+    password: rocket
+    url: jdbc:mysql://192.168.99.100:32778/rocket_api
+
+endpoints:
+    health:
+        sensitive: false
+
+management:
+  health:
+    db:
+      enabled: true # Enable database health check.
+    defaults:
+      enabled: true # Enable default health indicators.
+    diskspace:
+      enabled: true # Enable disk space health check.
